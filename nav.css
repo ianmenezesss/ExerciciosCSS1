@@ -1,0 +1,71 @@
+/* Reseta o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: rgb(67, 56, 56);
+  }
+  
+  .navbar {
+    background-color: #000000;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+  .nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  
+
+  #amar:hover {
+    color: #FFD700; 
+    
+  }
+
+  #verde:hover  {
+    color: #288b00; 
+    
+  }
+
+  #verm:hover {
+    color: #ff0000; 
+    
+  }
+
+  #azul:hover {
+    color: #1e00c7; 
+    
+  }
+  
+
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navbar {
+      padding: 15px;
+    }
+  
+    .nav-list li a {
+      padding: 10px 0;
+    }
+  }
